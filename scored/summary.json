@@ -1,0 +1,38 @@
+{
+  "i0_resolve_rates": {
+    "i0_run1": 79.8,
+    "i0_run2": 77.32,
+    "i0_run3": 77.0,
+    "i0_run4": 76.0,
+    "i0_run5": 72.0
+  },
+  "i0_mean_pp": 76.42,
+  "i0_std_pp": 2.54,
+  "i0_noise_floor_pp": 7.8,
+  "n_tasks": 100,
+  "n_always_resolved": 66,
+  "n_never_resolved": 16,
+  "n_unstable": 18,
+  "instability_rate_pct": 18.0,
+  "majority_vote_rate_pp": 76.0,
+  "i1c_resolve_rate_pp": 74.0,
+  "i1d_resolve_rate_pp": 76.0,
+  "mcnemar_i1c": {
+    "n_common": 100,
+    "b_pass_fail": 5,
+    "c_fail_pass": 3,
+    "n_discordant": 8,
+    "delta_pp": -2.0,
+    "p_value": 0.7266,
+    "significant_p05": false
+  },
+  "mcnemar_i1d": {
+    "n_common": 100,
+    "b_pass_fail": 4,
+    "c_fail_pass": 4,
+    "n_discordant": 8,
+    "delta_pp": 0.0,
+    "p_value": 1.0,
+    "significant_p05": false
+  }
+}
