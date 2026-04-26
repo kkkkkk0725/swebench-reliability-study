@@ -1,0 +1,366 @@
+{
+  "generated": "2026-04-25",
+  "purpose": "P4-generic K=3 positive control. Replaces entire problem_statement with a generic 'fix the bug' prompt to test whether the written issue channel is part of the agent's effective observation channel.",
+  "protocol": {
+    "perturbation": "P4-generic: replace problem_statement with generic prompt",
+    "replacement_text": "There is a bug in this repository. Identify and fix it so the tests pass.",
+    "n_tasks": 30,
+    "k_repeats": 3,
+    "total_calls": 90,
+    "estimated_cost_usd_at_057": 51.3,
+    "estimated_cost_usd_at_114": 102.6
+  },
+  "selection_rule": "All baseline 5/5 with repo round-robin diversity, then 4/5 if needed. Target n=30.",
+  "bucket_distribution": {
+    "5/5": 30,
+    "4/5": 0
+  },
+  "repo_distribution": {
+    "django/django": 5,
+    "sympy/sympy": 5,
+    "scikit-learn/scikit-learn": 5,
+    "astropy/astropy": 4,
+    "pydata/xarray": 3,
+    "pytest-dev/pytest": 3,
+    "matplotlib/matplotlib": 2,
+    "sphinx-doc/sphinx": 2,
+    "psf/requests": 1
+  },
+  "analysis_plan": {
+    "primary": "task-level sign test on per-task deltas (baseline_rate - p4_rate)",
+    "secondary": "Wilcoxon signed-rank on nonzero deltas",
+    "do_not_use": "run-level paired McNemar (run_i pairing not valid)"
+  },
+  "tasks": [
+    {
+      "instance_id": "django__django-10097",
+      "repo": "django/django",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "2288319e7e726935",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2656,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sympy__sympy-13480",
+      "repo": "sympy/sympy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "f08f8be58202a704",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 430,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "repo": "scikit-learn/scikit-learn",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "80b289fedf3bc996",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1519,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "astropy__astropy-14508",
+      "repo": "astropy/astropy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "d08eb8c70acd4f00",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2629,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "pydata__xarray-3305",
+      "repo": "pydata/xarray",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "21a3e64aad08beb7",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2188,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10081",
+      "repo": "pytest-dev/pytest",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "591d6bb69d71666b",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2905,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "repo": "matplotlib/matplotlib",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "e164457f11ff826d",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2582,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7889",
+      "repo": "sphinx-doc/sphinx",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "79c6d3aae9150c5f",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1166,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "psf__requests-2931",
+      "repo": "psf/requests",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "c36c337f6c5d918e",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 271,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "django__django-11141",
+      "repo": "django/django",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "f7a89b6c259b982b",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 829,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sympy__sympy-14531",
+      "repo": "sympy/sympy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "8cf843dcf782552d",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 668,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "repo": "scikit-learn/scikit-learn",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "e4b5e3d5f7d9caee",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 5567,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "astropy__astropy-14539",
+      "repo": "astropy/astropy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "deeb8ddb329b19eb",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1463,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "repo": "pydata/xarray",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "4d1a08fa41ecef39",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1456,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7432",
+      "repo": "pytest-dev/pytest",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "f8453cfb1e017be8",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 773,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24970",
+      "repo": "matplotlib/matplotlib",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "5ae160cc5420b058",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1758,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "repo": "sphinx-doc/sphinx",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "e814405fe0885a22",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1237,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "django__django-11149",
+      "repo": "django/django",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "06f935b0cc647735",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 783,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sympy__sympy-14711",
+      "repo": "sympy/sympy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "e4767d6b2a2a74a4",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1070,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "repo": "scikit-learn/scikit-learn",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "09d29f40006ebbae",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2314,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "astropy__astropy-14995",
+      "repo": "astropy/astropy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "2eb1c507dd3ad67a",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 2455,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "pydata__xarray-4695",
+      "repo": "pydata/xarray",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "acdf7cc514d6a56c",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 3514,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "repo": "pytest-dev/pytest",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "cb0b950c7e812816",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 459,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "django__django-11211",
+      "repo": "django/django",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "658b186e181f63e4",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 959,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sympy__sympy-15017",
+      "repo": "sympy/sympy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "b106dd1aed96c161",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1010,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "repo": "scikit-learn/scikit-learn",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "c9bb5529b14627fc",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 4704,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "astropy__astropy-7166",
+      "repo": "astropy/astropy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "70c79d6da0284ce8",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 162,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "django__django-11292",
+      "repo": "django/django",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "6fdf22f6653877da",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 401,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "sympy__sympy-16450",
+      "repo": "sympy/sympy",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "b52fc0b413e31421",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 1610,
+      "p4_length": 73
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "repo": "scikit-learn/scikit-learn",
+      "baseline_success_count": 5,
+      "baseline_success_rate": 1.0,
+      "selected_condition": "P4-generic",
+      "original_problem_statement_hash": "d7ebed2ea76e894a",
+      "p4_problem_statement_hash": "14672ed3b832b7b3",
+      "original_length": 158,
+      "p4_length": 73
+    }
+  ]
+}

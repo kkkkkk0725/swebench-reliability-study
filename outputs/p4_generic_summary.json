@@ -1,0 +1,284 @@
+{
+  "generated": "2026-04-25",
+  "n_tasks": 30,
+  "k_baseline": 5,
+  "k_p4": 2,
+  "total_baseline_successes": 150,
+  "total_p4_successes": 2,
+  "baseline_call_count": 150,
+  "p4_call_count": 60,
+  "baseline_aggregate_rate_pct": 100.0,
+  "p4_aggregate_rate_pct": 3.33,
+  "delta_aggregate_pp": 96.67,
+  "per_task": [
+    {
+      "instance_id": "django__django-10097",
+      "baseline_count": 5,
+      "p4_count": 2,
+      "baseline_rate": 1.0,
+      "p4_rate": 1.0,
+      "delta_rate": 0.0
+    },
+    {
+      "instance_id": "sympy__sympy-13480",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "astropy__astropy-14508",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "pydata__xarray-3305",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10081",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7889",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "psf__requests-2931",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "django__django-11141",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "sympy__sympy-14531",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "astropy__astropy-14539",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7432",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24970",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "django__django-11149",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "sympy__sympy-14711",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "astropy__astropy-14995",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "pydata__xarray-4695",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "django__django-11211",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "sympy__sympy-15017",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "astropy__astropy-7166",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "django__django-11292",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "sympy__sympy-16450",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "baseline_count": 5,
+      "p4_count": 0,
+      "baseline_rate": 1.0,
+      "p4_rate": 0.0,
+      "delta_rate": 1.0
+    }
+  ],
+  "delta_summary": {
+    "tasks_with_delta_positive_baseline_better": 29,
+    "tasks_with_delta_zero": 1,
+    "tasks_with_delta_negative_p4_better": 0,
+    "mean_delta_rate": 0.9667,
+    "median_delta_rate": 1.0
+  },
+  "primary_sign_test": {
+    "n_nonzero": 29,
+    "pos": 29,
+    "neg": 0,
+    "p_one_sided_degradation": 0.0,
+    "p_two_sided": 0.0
+  },
+  "secondary_wilcoxon_signed_rank": {
+    "n_nonzero": 29,
+    "W_pos": 435.0,
+    "W_neg": 0,
+    "z": 4.703,
+    "p_two_sided_normal_approx": 3e-06
+  },
+  "tertiary_mcnemar_majority_vote": {
+    "n_discordant": 29,
+    "b_pass_fail": 29,
+    "c_fail_pass": 0,
+    "p_value": 0.0,
+    "rule": "task-level: baseline_count>=3 (5-run majority) vs p4_count>=2 (all P4 runs resolved)"
+  },
+  "framing_note": "P4-generic uses K=3 perturbation runs per task. Baseline is K=5 from the main experiment. Per-task delta = baseline_rate - p4_rate. Primary test is the sign test on per-task delta signs; Wilcoxon signed-rank uses nonzero delta magnitudes. Run-level paired McNemar is intentionally not performed."
+}

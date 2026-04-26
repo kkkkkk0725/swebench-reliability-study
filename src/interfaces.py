@@ -1,13 +1,16 @@
-"""Interface variants: I0 (baseline) + I1 candidates.
+"""Interface variants: I0 (baseline) + I1 candidates + P4 positive control.
 
 Design note: this is the SINGLE SOURCE OF TRUTH for what an "evaluation interface" is
-in this experiment. Every I0 -> I1 transformation is expressed as a function here.
+in this experiment. Every I0 -> I1 / P4 transformation is expressed as a function here.
 
 Conceptual split:
   - Presentation-side variants change the INPUT to the model (require new inference).
-    Currently: i1c_issue_reformat
+    Currently: i1c_issue_reformat, p4_generic
   - Scoring-side variants change how we EVALUATE the SAME model output.
     Currently: i1a_test_ablation, i1b_parser_leniency
+
+Note: I1d (markdown strip) was applied directly to the issue text outside of this
+module; the resulting per-task outputs are in data/runs/full_i1d/preds.json.
 """
 from __future__ import annotations
 
@@ -29,6 +32,27 @@ def present_issue_i0(task: dict[str, Any]) -> IssuePresentation:
     return IssuePresentation(
         repo=task["repo"],
         issue_text=task["problem_statement"],
+        code_context=_build_code_context(task, reverse=False),
+    )
+
+
+P4_GENERIC_TEXT = "There is a bug in this repository. Identify and fix it so the tests pass."
+
+
+def present_issue_p4_generic(task: dict[str, Any]) -> IssuePresentation:
+    """P4-generic: Replace the entire problem_statement with a generic prompt.
+
+    This is an effective-channel ablation, NOT semantics-preserving. It
+    removes the written issue channel entirely (no bug description, no
+    repro steps, no traceback, no code, no hints). Only repository state
+    and the test harness remain available.
+
+    Used to test whether the written issue text is part of the agent's
+    effective observation channel.
+    """
+    return IssuePresentation(
+        repo=task["repo"],
+        issue_text=P4_GENERIC_TEXT,
         code_context=_build_code_context(task, reverse=False),
     )
 
