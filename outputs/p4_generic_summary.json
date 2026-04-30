@@ -280,5 +280,5 @@
     "p_value": 0.0,
     "rule": "task-level: baseline_count>=3 (5-run majority) vs p4_count>=2 (all P4 runs resolved)"
   },
-  "framing_note": "P4-generic uses K=3 perturbation runs per task. Baseline is K=5 from the main experiment. Per-task delta = baseline_rate - p4_rate. Primary test is the sign test on per-task delta signs; Wilcoxon signed-rank uses nonzero delta magnitudes. Run-level paired McNemar is intentionally not performed."
+  "framing_note": "P4-generic uses K=2 perturbation runs per task in the reported analysis. The protocol originally specified K=3; one run was aborted partway due to compute budget and is not included in this release. Baseline is K=5 from the main experiment. Per-task delta = baseline_rate - p4_rate. Primary test is the sign test on per-task delta signs; Wilcoxon signed-rank uses nonzero delta magnitudes. Run-level paired McNemar is intentionally not performed."
 }

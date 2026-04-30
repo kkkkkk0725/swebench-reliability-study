@@ -1,4 +1,4 @@
-# P4-generic K=3 n=30 -- Effective-Channel Ablation
+# P4-generic n=30 -- Effective-Channel Ablation
 
 Generated: 2026-04-25
 
@@ -6,7 +6,7 @@ Generated: 2026-04-25
 
 - Tasks: 30
 - Baseline K = 5 (150 calls)
-- P4 K = 2 (60 calls)
+- P4 K = 2 (60 calls); originally planned K = 3, but one run was aborted partway due to compute budget and is not included in this release.
 - Baseline successes: 150/150 = **100.0%**
 - P4 successes: 2/60 = **3.33%**
 - Aggregate delta: **+96.67 pp**
@@ -77,4 +77,4 @@ Generated: 2026-04-25
 
 ## Framing note
 
-P4-generic uses K=3 perturbation runs per task. Baseline is K=5 from the main experiment. Per-task delta = baseline_rate - p4_rate. Primary test is the sign test on per-task delta signs; Wilcoxon signed-rank uses nonzero delta magnitudes. Run-level paired McNemar is intentionally not performed.
+P4-generic uses K=2 perturbation runs per task in the reported analysis. The protocol originally specified K=3; one run was aborted partway due to compute budget and is not included in this release. Baseline is K=5 from the main experiment. Per-task delta = baseline_rate - p4_rate. Primary test is the sign test on per-task delta signs; Wilcoxon signed-rank uses nonzero delta magnitudes. Run-level paired McNemar is intentionally not performed.

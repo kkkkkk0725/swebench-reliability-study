@@ -18,7 +18,13 @@ data/runs/
   full_i1c/preds.json            # I1c paragraph-reorder run (K=1)
   full_i1d/preds.json            # I1d markdown-strip run (K=1)
   full_p4_generic_run{1,2}/preds.json
-                                 # P4-generic K=2 on n=30 baseline-5/5 subset
+                                 # P4-generic K=2 on n=30 baseline-5/5 subset.
+                                 # Originally planned K=3; one run was aborted
+                                 # partway due to compute budget and is not
+                                 # included here. The size of the observed
+                                 # effect (29/30 tasks degraded, sign test
+                                 # p < 1.86e-9) makes the K=3 to K=2 reduction
+                                 # inconsequential for the qualitative conclusion.
 
 scored/
   per_run_results.json      # Per-task binary outcomes for the main 7 runs

@@ -1,14 +1,15 @@
 {
+  "_convention_note": "Resolve rates use the standard SWE-bench denominator n=100 for all runs; tasks for which the agent failed to produce a valid patch are counted as unresolved.",
   "i0_resolve_rates": {
-    "i0_run1": 79.8,
-    "i0_run2": 77.32,
+    "i0_run1": 79.0,
+    "i0_run2": 75.0,
     "i0_run3": 77.0,
     "i0_run4": 76.0,
     "i0_run5": 72.0
   },
-  "i0_mean_pp": 76.42,
-  "i0_std_pp": 2.54,
-  "i0_noise_floor_pp": 7.8,
+  "i0_mean_pp": 75.8,
+  "i0_std_pp": 2.32,
+  "i0_noise_floor_pp": 7.0,
   "n_tasks": 100,
   "n_always_resolved": 66,
   "n_never_resolved": 16,
